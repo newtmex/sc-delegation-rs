@@ -7,9 +7,11 @@ edition = "2018"
 path = "../latest"
 
 [dependencies.multiversx-sc]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
 [dev-dependencies.multiversx-sc-scenario]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
 
 [dev-dependencies.auction-mock]
 path = "../auction-mock"

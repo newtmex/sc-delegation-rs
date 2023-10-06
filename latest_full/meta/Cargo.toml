@@ -8,4 +8,5 @@ publish = false
 path = ".."
 
 [dependencies.multiversx-sc-meta]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"

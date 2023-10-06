@@ -7,7 +7,9 @@ edition = "2018"
 path = "../node-storage"
 
 [dependencies.multiversx-sc]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
 features = ["alloc"]
 [dev-dependencies.multiversx-sc-scenario]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"

@@ -16,7 +16,8 @@ panic = "abort"
 path = ".."
 
 [dependencies.multiversx-sc-wasm-adapter]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
 
 [workspace]
 members = ["."]

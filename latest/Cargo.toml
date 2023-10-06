@@ -10,9 +10,12 @@ path = "../node-storage"
 path = "../user-fund-storage"
 
 [dependencies.multiversx-sc-modules]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
 
 [dependencies.multiversx-sc]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
 [dev-dependencies.multiversx-sc-scenario]
-version = "0.39.4"
+git = "https://github.com/newtmex/mx-sdk-rs.git"
+branch = "hackathon-feat"
