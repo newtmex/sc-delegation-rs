@@ -20,6 +20,17 @@ pub trait UserStakeEndpointsModule:
     + multiversx_sc_modules::features::FeaturesModule
     + multiversx_sc_modules::pause::PauseModule
 {
+    #[payable("EGLD")]
+    #[endpoint(delegate)]
+    fn delegate(&self, #[payment] payment: BigUint) {
+        self.stake_endpoint(payment)
+    }
+
+    #[endpoint(unDelegate)]
+    fn undelegate(&self, amount: BigUint) {
+        self.unstake_endpoint(amount)
+    }
+
     /// Delegate stake to the smart contract.
     /// Stake is initially inactive, so does it not produce rewards.
     #[payable("EGLD")]
